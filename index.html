@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Executive Lab - Plataforma educativa interactiva">
+  <title>Executive Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Executive Lab - Inicio">
+      <span class="brand-mark">EL</span>
+      <span><strong>Executive</strong> Lab</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#progreso">Mi progreso</a>
+      <a href="#insignias">Insignias</a>
+      <a href="#recursos">Recursos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">APRENDER • PRACTICAR • CRECER</span>
+        <h1>Tu laboratorio de<br><span>habilidades profesionales.</span></h1>
+        <p>Explora, practica y fortalece las competencias que necesitas para desenvolverte con seguridad en el mundo académico y profesional.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#cursos">Explorar cursos →</a>
+          <a class="btn secondary" href="#progreso">Ver mi progreso</a>
+        </div>
+        <div class="mini-stats">
+          <div><b>4</b><span>Cursos</span></div>
+          <div><b>∞</b><span>Retos por descubrir</span></div>
+          <div><b>🏆</b><span>Logros</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb1"></div><div class="orb orb2"></div>
+        <div class="glass-card card-a"><span>💡</span><b>Aprende</b><small>A tu ritmo</small></div>
+        <div class="glass-card card-b"><span>🎯</span><b>Practica</b><small>Con retos</small></div>
+        <div class="glass-card card-c"><span>🏅</span><b>Avanza</b><small>Supera tus metas</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="cursos">
+      <div class="section-heading">
+        <div><span class="eyebrow">EXECUTIVE LAB</span><h2>Explora tus cursos</h2></div>
+        <p>Cada espacio crecerá con lecciones, videos, prácticas, simuladores, recursos y retroalimentación.</p>
+      </div>
+      <div class="course-grid">
+        <article class="course management">
+          <div class="course-icon">📊</div><span class="tag">GESTIÓN</span>
+          <h3>Gestión</h3><p>Organización, procesos, herramientas y competencias para desenvolverte en entornos empresariales.</p>
+          <div class="course-bottom"><span>Contenido próximamente</span><button onclick="openCourse('Gestión')">Entrar →</button></div>
+        </article>
+        <article class="course entrepreneurship">
+          <div class="course-icon">💡</div><span class="tag">INNOVACIÓN</span>
+          <h3>Emprendimiento</h3><p>Convierte ideas en proyectos mediante creatividad, planificación, estrategia y visión emprendedora.</p>
+          <div class="course-bottom"><span>Contenido próximamente</span><button onclick="openCourse('Emprendimiento')">Entrar →</button></div>
+        </article>
+        <article class="course skills">
+          <div class="course-icon">🤝</div><span class="tag">HABILIDADES</span>
+          <h3>Destrezas</h3><p>Fortalece tus habilidades personales, sociales y profesionales para afrontar situaciones reales.</p>
+          <div class="course-bottom"><span>Contenido próximamente</span><button onclick="openCourse('Destrezas')">Entrar →</button></div>
+        </article>
+        <article class="course english">
+          <div class="course-icon">🌎</div><span class="tag">ENGLISH</span>
+          <h3>Inglés</h3><p>Desarrolla comunicación en inglés mediante experiencias prácticas y situaciones del mundo profesional.</p>
+          <div class="course-bottom"><span>Content coming soon</span><button onclick="openCourse('Inglés')">Enter →</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section" id="progreso">
+      <div class="feature-copy">
+        <span class="eyebrow">TU RECORRIDO</span><h2>Aprender también es avanzar.</h2>
+        <p>Executive Lab está preparado para incorporar progresivamente actividades, puntajes, niveles e insignias.</p>
+        <div class="progress-box">
+          <div class="progress-title"><span>Progreso general</span><b>0%</b></div>
+          <div class="progress-track"><div class="progress-fill"></div></div>
+          <small>Tu aventura está por comenzar.</small>
+        </div>
+      </div>
+      <div class="path">
+        <div class="path-item active"><span>01</span><div><b>Explora</b><small>Descubre nuevos contenidos</small></div></div>
+        <div class="line"></div>
+        <div class="path-item"><span>02</span><div><b>Practica</b><small>Pon a prueba lo aprendido</small></div></div>
+        <div class="line"></div>
+        <div class="path-item"><span>03</span><div><b>Supera retos</b><small>Recibe retroalimentación</small></div></div>
+        <div class="line"></div>
+        <div class="path-item"><span>04</span><div><b>Logra</b><small>Desbloquea reconocimientos</small></div></div>
+      </div>
+    </section>
+
+    <section class="section badges-section" id="insignias">
+      <span class="eyebrow">RECONOCE TU ESFUERZO</span><h2>Insignias</h2>
+      <p class="center-text">Más adelante podrás desbloquear insignias conforme completes desafíos y alcances nuevas metas.</p>
+      <div class="badges">
+        <div class="badge locked">🔒<b>Primer paso</b><small>Bloqueada</small></div>
+        <div class="badge locked">🔒<b>Comunicador</b><small>Bloqueada</small></div>
+        <div class="badge locked">🔒<b>Innovador</b><small>Bloqueada</small></div>
+        <div class="badge locked">🔒<b>Executive Pro</b><small>Bloqueada</small></div>
+      </div>
+    </section>
+
+    <section class="resources" id="recursos">
+      <div><span class="eyebrow light">EN CONSTRUCCIÓN</span><h2>Tu biblioteca crecerá contigo.</h2>
+      <p>Aquí podremos incorporar guías, videos, infografías, enlaces, simuladores y otros recursos conforme avance el proyecto.</p></div>
+      <div class="resource-icons"><span>▶</span><span>📄</span><span>🎮</span><span>🧠</span></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">EL</span><span><strong>Executive</strong> Lab</span></div><p>Aprender • Practicar • Crecer</p><small>Plataforma educativa</small></footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card"><button class="close" onclick="closeModal()">×</button><span class="modal-icon">🚧</span><h3 id="modalTitle">Curso</h3>
+      <p>La estructura está lista. Aquí iremos incorporando el contenido, las prácticas, los videos y los simuladores de este curso.</p>
+      <button class="btn primary" onclick="closeModal()">Entendido</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
